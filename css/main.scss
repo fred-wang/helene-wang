@@ -1433,6 +1433,7 @@ $baseurl: '{{ site.baseurl }}/images';
 						&.menuToggle {
 							outline: 0;
 							position: relative;
+							text-shadow: 1px 1px black;
 
 							&:after {
 								background-image: url('images/bars.svg');
@@ -1498,6 +1499,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			padding: 0.35em 1em;
 			position: relative;
 			z-index: 1;
+			text-shadow: 1px 1px black;
 
 			&:before, &:after {
 				@include vendor('transition', 'width 0.85s ease');
@@ -1550,6 +1552,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			text-transform: uppercase;
 			width: 16em;
 			z-index: 1;
+			text-shadow: 1px 1px black;
 
 			&:after {
 				background-image: url('images/arrow.svg');
@@ -1685,6 +1688,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			h2 {
 				font-size: 1.75em;
 				margin: 0 0 (_size(element-margin) * 0.25) 0;
+				text-shadow: 1px 1px black;
 			}
 
 			p {
@@ -1800,7 +1804,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 	body.landing {
 		#page-wrapper {
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")'));
+			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.2))', 'url("#{$baseurl}/banner.jpg")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1821,7 +1825,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 			#banner,
 			.wrapper.style4 {
-				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")'));
+				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.2))', 'url("#{$baseurl}/banner.jpg")'));
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;
@@ -1832,3 +1836,82 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 		}
 	}
+
+
+.scalable {
+  overflow: hidden;
+}
+
+.scalable iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.scalable .scalable-content {
+  height: 0;
+  position: relative;
+}
+
+.scalable-16-9 .scalable-content {
+  /* Percentage from 9 divided by 16 for ratio of 16:9. */
+  padding-bottom: 56.25%;
+}
+
+audio {
+  width: 100%;
+}
+
+.zoomable-image {
+    overflow: hidden;
+    -moz-transition: -moz-transform 0.2s ease-out;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -ms-transition: -ms-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    :hover {
+        -moz-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+
+a.top-spacing {
+    display: block;
+    margin-bottom: 5em;
+}
+
+#poeme-traduction {
+  font-style: italic;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#prestations-grid {
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-gap: 5% 5%;
+  grid-template-columns: 30% 30% 30%;
+  align-self: stretch;
+}
+
+#prestations-grid > div {
+    text-align: center;
+    padding: .5em;
+}
+#prestations-grid img {
+    clip-path: circle();
+    width: 85%;
+}
+#prestations-grid a {
+    border-bottom: none;
+}
+
+#a-propos-photo {
+    clip-path: circle();
+    width: 25%;
+}

@@ -5,4 +5,26 @@ title: Contact
 menuorder: 4
 ---
 
-<p>Besoin d'adapter un texte pour un public francophone ? Je vous propose mes services de <a href="prestations.html#traduction">traduction</a>, <a href="prestations.html#revision">révision</a>, et <a href="prestations.html#transcription">transcription audio/vidéo</a>. Le prix d’une prestation dépend de plusieurs facteurs tels que la combinaison linguistique, le volume du document, le degré de technicité, le degré d’urgence ou bien le format du fichier. Contactez-moi <a href="mailto:info@helene-wang.fr">par e-mail</a> afin de recevoir un devis gratuit et trouver la solution la mieux adaptée à vos besoins. Je vous répondrai dans les plus brefs délais.</p>
+<p>Besoin d'adapter un texte pour un public francophone ? Je vous propose mes services de <a href="prestations.html#traduction">traduction</a>, <a href="prestations.html#revision">révision</a>, et <a href="prestations.html#transcription">transcription audio/vidéo</a>. Le prix d’une prestation dépend de plusieurs facteurs tels que la combinaison linguistique, le volume du document, le degré de technicité, le degré d’urgence ou bien le format du fichier. Contactez-moi <a href="mailto:info@helene-wang.fr">par e-mail</a> ou via le formulaire ci-dessous afin de recevoir un devis gratuit et trouver la solution la mieux adaptée à vos besoins. Je vous répondrai dans les plus brefs délais.</p>
+
+<form action="submit.php" method="post">
+    <div>
+        <label for="name" autocomplete="name">Nom et prénom :</label>
+        <input type="text" id="name" name="name"/>
+    </div>
+    <div>
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" autocomplete="email"/>
+    </div>
+    <div>
+        <label for="subject">Sujet :</label>
+        <input type="text" id="subject" name="subject"/>
+    </div>
+    <div>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message"></textarea>
+    </div>
+    <div style="margin: 1em; text-align: right;">
+        <button type="submit">Envoyer votre message</button>
+    </div>
+</form>

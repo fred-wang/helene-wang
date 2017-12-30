@@ -7,7 +7,7 @@ description: |
   Site web de Hélène Wang
 owner: "Hélène Wang"
 first_published: 2017 # if migrating another site, the year of your first publish
-email: helenewang88@gmail.com
+email: info@helene-wang.fr
 baseurl: "" # the subpath of your site, e.g. /blog
 path: "http://helene-wang.fr" # the base hostname & protocol for your site
 social:
@@ -16,7 +16,7 @@ social:
   linkedin-square: https://linkedin.com/in/helene-wang
   #facebook-official: https://facebook.com/<username>
   #google-plus-square: https://plus.google.com/u/0/+<username>
-  email: "mailto:helenewang88@gmail.com"
+  email: "mailto:info@helene-wang.fr"
   #flickr:
   #instagram:
   #youtube-square:
